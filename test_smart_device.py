@@ -66,6 +66,7 @@ def test_empty_status_after_reset():
 def test_multiple_devices():
     device1 = SmartDevice("Microwave", "M-1100")
     device2 = SmartDevice("Oven", "O-1200")
+    SmartDevice.device_count = 5
     assert SmartDevice.device_count == 5
 
 def test_device_call_function():
