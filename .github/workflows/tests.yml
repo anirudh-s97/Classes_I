@@ -1,4 +1,4 @@
-name: Smart Device Tests
+name: Smart Device Tests data
 
 on:
   push:
