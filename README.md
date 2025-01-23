@@ -107,9 +107,8 @@ def test_device_info():
 class SmartDevice:
     device_count = 0
     is_o
+'''
 
+<img width="1025" alt="image" src="https://github.com/user-attachments/assets/095a0d80-3e7e-4109-ad7d-be6d76170af8" />
 
-### 8. Running Tests
-
-<img width="1025" alt="image" src="https://github.com/user-attachments/assets/bf830dde-4964-49b1-9afc-b1fb8c3530c1" />
 
