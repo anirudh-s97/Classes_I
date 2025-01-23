@@ -20,7 +20,7 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v4
 
-    - name: Set up Python
+    - name: Set up Pythonic
       uses: actions/setup-python@v4
       with:
         python-version: '3.9'
