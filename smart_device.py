@@ -1,5 +1,5 @@
 class SmartDevice:
-
+    """Smart Device Class"""
     device_count = 0
     device_name = "smart"
     model_number = "1234"
