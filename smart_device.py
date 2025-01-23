@@ -4,16 +4,17 @@ class SmartDevice:
     device_name = "smart"
     model_number = "1234"
     is_online = False
-    device_objects = set()
+    instances = {}
     status = {}
 
     def __init__(self, device_name, model_number, is_online=False):
         self.device_name = device_name
         self.model_number = model_number
         self.is_online = is_online
-        if id(self) not in SmartDevice.device_objects:
+        if id(self) not in SmartDevice.instances:
             SmartDevice.device_count += 1
-        SmartDevice.device_objects.add(id(self)) 
+            SmartDevice.instances[id(self)] = 1
+
 
     def __call__(self):
         
