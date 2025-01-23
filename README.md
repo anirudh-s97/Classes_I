@@ -111,4 +111,5 @@ class SmartDevice:
 
 ### 8. Running Tests
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/138c53dc-7055-453b-bc11-b6839567aa8f" />
+<img width="1025" alt="image" src="https://github.com/user-attachments/assets/bf830dde-4964-49b1-9afc-b1fb8c3530c1" />
+
