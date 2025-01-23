@@ -4,16 +4,16 @@ class SmartDevice:
     device_name = "smart"
     model_number = "1234"
     is_online = False
-    device_objects = {}
+    device_objects = set()
     status = {}
 
     def __init__(self, device_name, model_number, is_online=False):
         self.device_name = device_name
         self.model_number = model_number
         self.is_online = is_online
-        if SmartDevice.device_objects.get(hex(id(self))) is None:
+        if hex(id(self)) not in SmartDevice.device_objects:
             SmartDevice.device_count += 1
-        SmartDevice.device_objects[hex(id(self))] = 1
+        SmartDevice.device_objects.add(hex(id(self))) 
 
     def __call__(self):
         
