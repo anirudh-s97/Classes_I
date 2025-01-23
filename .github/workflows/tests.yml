@@ -21,6 +21,7 @@ jobs:
     steps:
     - name: Check out repository
       uses: actions/checkout@v4
+      run: rm -rf .pytest_cache
 
     - name: Set up Pythonic
       uses: actions/setup-python@v4
