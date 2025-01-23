@@ -11,9 +11,9 @@ class SmartDevice:
         self.device_name = device_name
         self.model_number = model_number
         self.is_online = is_online
-        if hex(id(self)) not in SmartDevice.device_objects:
+        if id(self) not in SmartDevice.device_objects:
             SmartDevice.device_count += 1
-        SmartDevice.device_objects.add(hex(id(self))) 
+        SmartDevice.device_objects.add(id(self)) 
 
     def __call__(self):
         
